@@ -6,4 +6,9 @@ class Card < ActiveRecord::Base
   validates :row, presence: true 
   validates :column, presence: true 
   validates :word, presence: true
+
+  attr_accessor :color, :row, :column, :word
+
+  def initialize 
+  end
 end
